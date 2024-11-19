@@ -32,63 +32,6 @@ Check out the demo on youtube [FocusBoost](https://youtu.be/1BXJl57HUnk?si=Ltc4n
 ![alt text](src/focusboost.png)
 
 
-## Development Timeline
-### November 14
-- **Daksh and Hasan**
-  - Started laying the groundwork for the project
-### November 15
-- **Hasan**
-  - Implemented barebones feature of the youtube selenium script to autoskip videos (Next step is to implement exg pill data for the skipping
-- **Daksh**
-  - Set up the electron app by creating the renderer files: index(html/js), preload.js, styles.css. Also updated the package.json file and cleaned up other files
-  - Dealt with troubleshooting and refinements, fixed GPU crashes through disabling GPU rendering. Debugged other issues so that the window would open properly. Resolved through developing a gitignore file. 
-  - Tested window using mock data, used to test real-time visualization of the app. Refined the chart code for better visuals. 
-  - Improved other aspects of the project like helping with the arduino data processing, communicating aspects with teamates, cleaned and set up README.md with better setup instructions, and developed how to prompt notifications.
-- **Avery**
-  - Connected BioAmp EXG Pill to Arduino to begin gathering brainwave signals. Wrote required code in Arduino IDE to begin the aquisition of data from the EXG Pill.
-  - Used byb spike recorder to test methods of recording signals to detect focus/stress. Decided on using the EXG as an EEG by connecting it to the forehead, targeting the frontal lobe. ECG data was simple to work with but not necessarily indicitave of focus/stress.
-  - Began serial plotting raw EEG data in Arduino IDE to visualize and confirm accuracy.
-  - Wrote code to transfer raw EEG data to python stress_monitor.py using pyserial module.
-## November 16
-- **Hasan**
-<<<<<<< HEAD
-  - Implemented reading EXG pill data to display notifications on chromium, decided by being focused or unfocused, and closing the page if the person remains unfocused
-  - Implemented focus features into youtube shorts and tiktok videos to show an example of our notification feature/data analysis
-- **Avery**
-  - Continued work on backend in stress_monitor.py by filtering raw EEG data by changing data into frequency domain and using scipy module to implement a bandpass filter for beta waves (14-30 Hz).
-  - Made a function to check if the incoming signals are in the beta range based on the beta wave power.
-  - If 10% or more of the incoming signals, over the course of a minute, are OUTSIDE of the beta range, the subject is UNFOCUSED. Otherwise they are FOCUSED.
-  - stress_monitor.py prints if the subject is FOCUSED or UNFOCUSED as well as the percentage of how UNFOCUSED the subject is. Example output:    Is Unfocused: False (True Percentage: 2.79%).
-  - Tested and adjusted frequency ranges to accurately describe the subjects focus ranges.
-    
-- **Daksh**
-  - Set up push notifications and sound alerts in the Electron app. Implemented a system to dynamically display notifications for focus/unfocus states and integrated motivational quotes for repeated unfocused instances.
-  - Refined notification aesthetics to match a neutral theme with a bright pink tone for alerts, ensuring a visually cohesive interface.
-  - Enhanced the renderer functionality, modifying it to dynamically display the current state (e.g., "Current State: Focused/Unfocused") alongside real-time updates.
-  - Debugged file read operations to ensure smooth integration with file.txt for displaying state changes accurately.
-  - Improved the styles.css file to align the app's visual theme with a modern, neutral mode-inspired look while fine-tuning animations for notifications. Integrated video background functionality for a visually appealing application interface.
-  - Reverted multiple files to resolve issues during testing and switched the frontend framework from JavaScript to React, paving the way for a more modular and scalable codebase. But then reverted back into HTML, CSS, and JavaScript for a better connection with backend.  
-  - Connected the frontend to the backend, establishing seamless communication between the Electron app and the Arduino hardware for real-time data visualization and monitoring. Worked on integrating transitions between focus states.
-  - Designed better error-handling mechanisms for seamless data flow between hardware and software.
-  - Tested the Arduino integration, focusing on how it receives and processes signals for seamless communication with the Electron app.
-  - Updated and cleaned up README.md, adding contributions, software dependencies, and enhanced setup instructions.
-  - Refined and Advanced the UI enhancements.
-  - Developed and dine-tuned the connection between the Electron app and Arduino to minimize latency in real-time updates
-  - Incorporated a dynamic notification system that includes motivational quotes by David Goggins for repeated unfocused states, creating an engaging user experience.
-  - Integrated video background functionality for a visually appealing application interface.
-
-## November 17
-- **Hasan**
-  - Synchronized the buttons in the electron app to execute the python scripts for youtube and tiktok
-  - Streamlined the UI of the app
-- **Avery and Daksh**
-  - Cleaned up files and refined certain aspects of the app.
-  - Recorded and edited final presentation video, ensuring a polished and professional overview of the project’s key features and functionality.
-  - Conducted final testing and debugging of both frontend and backend systems to ensure 
-seamless integration and reliable performance during the demonstration.
-  - Organized and streamlined the project repository, removing unnecessary files and updating documentation for clarity and future scalability.
-
-
 ## 🔨 Tools
 
 ### Software
@@ -187,13 +130,7 @@ Make sure you’ve downloaded ChromeDriver:
 
 <!--- put your links here --->
 
-* [Avery Bettesworth](https://github.com/Betts6430) - Computer Engineering Student
-* [Daksh Sethi](https://github.com/daksh3333) - Software Engineering Student
-* [Hasan Khan](https://osu.github.io/portfolio/) - Computer Scientist and Psychology Student
 * [Hassan Farooq Mohammed ](https://github.com/osu) - Computer Scientist
-* [Tatjana Golovin](https://devpost.com/tatjana-golovin) - Neuroscientist
-* [Varinder Singh](https://devpost.com/varinderjeetsingh311) - Psychology Graduate
-
 
 ## 📰 Notes
 
