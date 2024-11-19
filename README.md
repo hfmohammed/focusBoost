@@ -126,11 +126,6 @@ Make sure you’ve downloaded ChromeDriver:
 *  Download the version that matches your Chrome browser version (check chrome://settings/help in Chrome for the version).
 *  Extract the ChromeDriver executable.
 
-## 👨‍👧‍👧 Team
-
-<!--- put your links here --->
-
-* [Hassan Farooq Mohammed ](https://github.com/osu) - Computer Scientist
 
 ## 📰 Notes
 
